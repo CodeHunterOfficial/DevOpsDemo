@@ -31,7 +31,7 @@ steps:
 
 - task: PublishCodeCoverageResults@1
   inputs:
-    codeCoverageTool: dotCover
+    codeCoverageTool: 'dotCover'
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/*.html'
     reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
   displayName: 'Publish code coverage results'
